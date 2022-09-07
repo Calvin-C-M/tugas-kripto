@@ -15,16 +15,17 @@ int main() {
         printf("3. Keluar\n");
 
         std::cout << "Pilihan: "; std::cin >> pilihan;
+        std::cin.ignore();
 
         switch(pilihan) {
             case 1:
-                std::cout << "Masukkan teks yang ingin dienkripsi: "; std::cin >> plaintext;
+                std::cout << "Masukkan teks yang ingin dienkripsi: "; std::getline(std::cin,plaintext);
                 std::cout << "Masukkan key: "; std::cin >> key;
                 std::cout << "Hasil enkripsi = " << ShiftCipher::encrypt(plaintext,key) << "\n";
                 break;
 
             case 2:
-                std::cout << "Masukkan teks yang ingin didekripsi: "; std::cin >> plaintext;
+                std::cout << "Masukkan teks yang ingin didekripsi: "; std::getline(std::cin,plaintext);
                 std::cout << "Masukkan key: "; std::cin >> key;
                 std::cout << "Hasil dekripsi = " << ShiftCipher::decrypt(plaintext,key) << "\n";
                 break;
