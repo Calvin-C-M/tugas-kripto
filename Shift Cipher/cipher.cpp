@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 namespace ShiftCipher {
     const int ASCII_CODE = 97;
@@ -7,7 +8,7 @@ namespace ShiftCipher {
         std::string ans="";
         for(char ch: text) {
             if((ch-ASCII_CODE) >= 0 && (ch-ASCII_CODE) <= 25) {
-                ch = ((ch-ASCII_CODE)+key%26)+ASCII_CODE;
+                ch = (((ch-ASCII_CODE)+key)%26)+ASCII_CODE;
             }
             ans.push_back(ch);
         }
