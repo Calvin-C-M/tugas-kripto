@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <regex>
 
 namespace AffineCipher {
     const int ASCII_CODE_LC=97;
