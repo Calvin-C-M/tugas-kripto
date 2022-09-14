@@ -2,6 +2,16 @@
 #include "shift.cpp"
 #include "affine.cpp"
 
+void menuShift(std::string command);
+void menuAffine(std::string command);
+void menuCipher(std::string cipher);
+void mainMenu();
+
+
+int main() {
+    mainMenu();
+}
+
 void menuShift(std::string command="ENCRYPT") {
     std::string text="";
     int key=1;
@@ -96,8 +106,4 @@ void mainMenu() {
             mainMenu();
             break;
     }
-}
-
-int main() {
-    mainMenu();
 }
