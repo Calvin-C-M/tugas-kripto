@@ -2,9 +2,9 @@
 #include "shift.cpp"
 #include "affine.cpp"
 
-void menuShift(std::string command);
-void menuAffine(std::string command);
-void menuCipher(std::string cipher);
+void menuShift();
+void menuAffine();
+void menuCipher();
 void mainMenu();
 
 
@@ -42,10 +42,10 @@ void menuAffine(std::string command="ENCRYPT") {
 }
 
 void menuCipher(std::string cipher="SHIFT") {
+    system("cls");
     int pilihan=1;
 
     printf("\nMENU CIPHER\n");
-    printf("Pilihan Cipher: %s\n", cipher);
     printf("1. Enkripsi\n");
     printf("2. Dekripsi\n");
     printf("3. Kembali\n");
@@ -72,12 +72,13 @@ void menuCipher(std::string cipher="SHIFT") {
         default:
             printf("(X) Ada kesalahan dalam memilih, silahkan coba lagi!\n");
             system("pause");
-            menuCipher();
+            menuCipher(cipher);
             break;
     }
 }
 
 void mainMenu() {
+    system("cls");
     int pilihan=1;
 
     printf("\nMAIN MENU\n");
