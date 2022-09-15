@@ -6,3 +6,6 @@ Anggota Kelompok
 3. Naufal Fahrezi           (140810200035)
 4. Calvin Calfi Montolalu   (140810200053)
 5. Deani Puteri Virdiana    (140810200059)
+
+## Link Sheet Latihan
+Buat liat sheet latihan kripto [disini](https://docs.google.com/spreadsheets/d/1rAzi5pcqDnqBle8ikxH-bfmkxGBGOL4W/edit?usp=sharing&ouid=109817228880379316280&rtpof=true&sd=true)
